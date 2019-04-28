@@ -1,0 +1,13 @@
+.control {
+    border: 2px solid #d5d5d5;
+    text-align: center;
+    width: 10%;
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+.control p {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+}

@@ -1,0 +1,22 @@
+.posts {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    /* counter-reset: tidbit-counter; */
+}
+.p {
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: firebrick;
+}
+/* .posts::before {
+    counter-increment: tidbit-counter;
+    content: counter(tidbit-counter) ": ";
+} */

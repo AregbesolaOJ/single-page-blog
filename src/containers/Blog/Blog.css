@@ -1,0 +1,23 @@
+.Blog {
+    padding: 10px 10%;
+    /* text-align: center; */
+  }
+  .header nav {
+    width: 100%;
+    text-align: center;
+  }
+  .header li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px;
+    font-weight: bold;
+  }
+  .header li:hover,
+  .header li:active {
+    color: #ffa949;
+    text-decoration: underline;
+  }
+  .header a {
+    text-decoration: none;
+    color: inherit;
+  }
