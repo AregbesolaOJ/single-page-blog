@@ -46,6 +46,12 @@ const reducer = (state = defaultState, action) => {
             results: state.results.concat( newPost )
         }
     }
+    if(action.type === 'ADD_NEW') {
+        return {
+            ...state,
+            counter: state.counter + action.payload
+        }
+    }
     if(action.type === 'SELECTED_POST') {
         const post = state.results.filter(result => result.Id === action.postId);
         return {

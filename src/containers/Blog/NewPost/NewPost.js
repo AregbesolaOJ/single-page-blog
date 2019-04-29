@@ -31,6 +31,8 @@ class NewPost extends React.Component {
                 author: this.state.author
             }
             console.log(formData);    
+            alert('Your Post has been added successfully');
+            this.props.history.push('/');
         }
     }
 
@@ -72,11 +74,12 @@ class NewPost extends React.Component {
 const newPost = new NewPost();
 
 if (newPost.state.title !== "" && newPost.state.content !== "" && newPost.state.author !== "") {
-    var mapDispatchToProps = dispatch => {
-            return {
-                newPostHandler: (title, content, author) => dispatch({type: 'ADD_NEW_POST', payload: {title, content, author}})            
-            }
-        };
+};
+const mapDispatchToProps = dispatch => {
+    return {
+        newP: () => dispatch({type: 'ADD_NEW', payload: 100}),            
+        newPostHandler: (title, content, author) => dispatch({type: 'ADD_NEW_POST', payload: {title, content, author}})            
+    }
 };
 
-export default connect(mapDispatchToProps)(NewPost);
+export default connect(null, mapDispatchToProps)(NewPost);
